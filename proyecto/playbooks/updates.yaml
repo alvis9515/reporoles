@@ -1,0 +1,9 @@
+---
+- name: update SOs
+  hosts: all
+  become: true
+  roles:
+    - updateapt
+    - updateyum
+    - updatednf
+    - updatezypper

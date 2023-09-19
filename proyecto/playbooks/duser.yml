@@ -1,0 +1,6 @@
+---
+- name: Eliminar usuario
+  hosts: all
+  become: true
+  roles:
+    - deleteuser

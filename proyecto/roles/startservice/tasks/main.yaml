@@ -1,0 +1,6 @@
+---
+- name: servicios a iniciar
+  ansible.builtin.service:
+    name: "{{ item }}"
+    state: started
+  loop: "{{ listadoservice }}"
