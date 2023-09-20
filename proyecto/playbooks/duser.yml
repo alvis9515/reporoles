@@ -3,4 +3,4 @@
   hosts: all
   become: true
   roles:
-    - deleteuser
+    - role: 'proyecto/roles/deleteuser'
