@@ -1,6 +1,4 @@
 ---
-- name: Agregar usuario
-  hosts: all
-  become: true
-  roles:
-    - adduser
+ - hosts: all
+   roles:
+   - adduser
