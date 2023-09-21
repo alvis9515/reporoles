@@ -6,4 +6,4 @@
     - role: 'proyecto/roles/updateapt'
     - role: 'proyecto/roles/updatednf'
     - role: 'proyecto/roles/updateyum'
-    - role: 'proyecto/roles/updatezipper'
+    - role: 'proyecto/roles/updatezypper'
