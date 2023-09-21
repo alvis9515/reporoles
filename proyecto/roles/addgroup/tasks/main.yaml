@@ -1,12 +1,14 @@
 ---
 - name: Crear el grupo
   group:
-    name: nombre_del_grupo
+    name:  "{{ group_name }}"
     state: present
+    
 - name: Verificar la creación del grupo
-  command: getent group nombre_del_grupo
+  command: getent group "{{ group_name }}"
   register: result
-  changed_when: fals
+  changed_when: false
+  
 - name: Mostrar el resultado
   debug:
     var: result.stdout_lines
