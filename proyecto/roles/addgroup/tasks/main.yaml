@@ -1,0 +1,12 @@
+---
+- name: Crear el grupo
+  group:
+    name: nombre_del_grupo
+    state: present
+- name: Verificar la creación del grupo
+  command: getent group nombre_del_grupo
+  register: result
+  changed_when: fals
+- name: Mostrar el resultado
+  debug:
+    var: result.stdout_lines
